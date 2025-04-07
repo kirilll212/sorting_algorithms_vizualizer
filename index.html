@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Sorting Algorithm Visualizer</h1>
+        <div class="controls mt-4 mb-4 p-4 bg-light rounded shadow-sm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="algorithm">Choose Algorithm:</label>
+                    <select id="algorithm" class="form-control">
+                        <option value="bubbleSort">Bubble Sort</option>
+                        <option value="selectionSort">Selection Sort</option>
+                        <option value="insertionSort">Insertion Sort</option>
+                        <option value="mergeSort">Merge Sort</option>
+                        <option value="quickSort">Quick Sort</option>
+                        <option value="heapSort">Heap Sort</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="arraySize">Array Size:</label>
+                    <input type="number" id="arraySize" class="form-control" min="5" max="100" placeholder="Max value is 100">
+                </div>
+            </div>
+            <button class="btn btn-primary mr-2" onclick="generateArray()">Generate Array</button>
+            <button class="btn btn-success" onclick="sortArray()">Sort</button>
+        </div>
+        <div id="arrayContainer" class="d-flex justify-content-center align-items-end mt-4"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
